@@ -1,0 +1,27 @@
+body {
+  padding-top:50px; padding-bottom: 50px;
+  }
+
+.sidebar-nav {
+    margin-top: 20px;
+    padding:5px;
+    list-style: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 6px 4px 0;
+    margin-top: 1px;
+    line-height: inherit;
+    vertical-align: -2px;
+}
+label {
+  font-weight: bold;
+}
+form {
+  margin-top:20px;
+}

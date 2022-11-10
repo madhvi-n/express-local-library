@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1.display-4= title
+  
+  ul
+  each book in book_list
+    li(style='list-style-type:square')
+      a(href=book.url) #{book.title}
+      |  (#{book.author.name})
+      hr
+  else
+    li There are no books.

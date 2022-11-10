@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1.display-4= title
+  hr
+
+  div.row
+    each genre in genre_list
+      p.col-4
+        a(href=genre.url) #{genre.name}
+    else
+      li There are no authors.

@@ -1,0 +1,39 @@
+doctype html
+html(lang='en')
+	head
+		title= title
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+		script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+	.container
+		div(class='row')
+			div(class='col-md-3')
+				block sidebar
+					ul(class='list-group')
+						li(class='list-group-item list-group-item-action')
+							a(href='/catalog') Home
+						li(class='list-group-item list-group-item-action')
+							a(href='/catalog/books') All books
+						li(class='list-group-item list-group-item-action')
+							a(href='/catalog/authors') All authors
+						li(class='list-group-item list-group-item-action')
+							a(href='/catalog/genres') All genres
+						li(class='list-group-item list-group-item-action')
+							a(href='/catalog/bookinstances') All book-instances
+						li(class='list-group-item list-group-item-action')
+							a(href='/catalog/author/create') Create new author
+						li(class='list-group-item list-group-item-action')
+							a(href='/catalog/genre/create') Create new genre
+						li(class='list-group-item list-group-item-action')
+							a(href='/catalog/book/create') Create new book
+						li(class='list-group-item list-group-item-action')
+							a(href='/catalog/bookinstance/create') Create new book instance (copy)
+
+
+			div(class='col-md-9')
+				block content
